@@ -81,10 +81,7 @@ html {
 }
 
 #star {
-    position: 78, 78;
-    top:2.5rem;
-    left: 50%;
-    transform: translateX(-50%);
+    position: relative;;
     font-size: 5rem;
 }
 
