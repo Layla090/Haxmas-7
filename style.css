@@ -62,32 +62,43 @@ html {
     to { background-position-y: calc((var(--snowsize) * 2)), var(--snowsize); }
 }
 
-#tree-container {
-    width: 100%;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    height: 100vh;
-    align-items: center;
-
+#tree-container{
+  width: 100%;
+  height: 130vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#tree {
-    width: 20rem;
-    margin: 0;
-    display: block;
-    height: 80vh;
-    width: auto;
+#tree{
+  width: 88rem;      /* yo vro tree size */
+  height: auto;
+  display: block;
 }
 
-#star {
-    position: relative;;
-    font-size: 5rem;
-}
-
-#decorations {
-  position:absolute;
-  top: 0;
-  left: 50%;
+/* Star wow */
+#star{
+  position: absolute;
+  left: 50.7%;
+  top: 7.7%;                 /* move up/down */
   transform: translateX(-50%);
+  font-size: 4rem;
+  z-index: 3;
 }
+
+/* ORNAMENT BASE STYLE */
+.orn{
+  position: absolute;
+  width: 5em;            /* ornament size */
+  height: 5rem;
+  object-fit: cover;
+  border-radius: 50%;       /* makes them a circle yayyyyyy */
+  z-index: 2;
+}
+
+.orn.o1{ left: 55%; top: 49%; }
+.orn.o2{ left: 50%; top: 22%; }
+.orn.o3{ left: 43%; top: 37%; }
+.orn.o4{ left: 34%; top: 57%; }
+.orn.o5{ left: 67%; top: 67%; transform: translateX(-50%); }
